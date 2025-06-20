@@ -5,8 +5,8 @@ import br.dio.exceptions.InvalidParametersException;
 public class Counter {
 
     public static void count(int a, int b){
-        if(b > a) {
-            throw new InvalidParametersException("O segundo parâmetro deve ser maior que o segundo");
+        if(b < a) {
+            throw new InvalidParametersException("O segundo parâmetro deve ser maior que o primeiro");
         }
 
         int quantity = b - a;
